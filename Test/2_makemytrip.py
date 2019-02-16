@@ -14,6 +14,7 @@ else:
     print("Provide the appropriate browser name")
 driver.get("https://makemytrip.com/")
 driver.maximize_window()
+driver.implicitly_wait(5) #implicit wait is applied on the driver
 driver.find_element_by_id("header_tab_hotels").click()
 time.sleep(5)
 driver.find_element_by_id("header_tab_holidays").click()
@@ -21,3 +22,4 @@ driver.back()
 driver.find_element_by_id("header_tab_cabs").click()
 time.sleep(5)
 driver.forward()
+driver.refresh()
