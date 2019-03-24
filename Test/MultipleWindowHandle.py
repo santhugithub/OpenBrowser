@@ -39,7 +39,6 @@ for x in range(size):
         break
 '''
 driver.switch_to.window(parent_handle);
-driver.find_element_by_xpath("//*[@class='login']").click()
+driver.find_elemen_by_xpath("//*[@class='login']").click()
 time.sleep(10)
-driver.quit()
-'''
+driver.quit()'''

@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 
-driver=webdriver.Chrome(executable_path="F:/Selenium/chromedriver.exe")
+driver=webdriver.Chrome()
 driver.get("https://www.facebook.com/")
 driver.implicitly_wait(30)
 driver.find_element_by_xpath("//*[@class='inputtext']").send_keys("santhu.ns.in@gmal.com")
