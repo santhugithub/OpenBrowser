@@ -18,8 +18,6 @@ for i in element:
 print("broken_link",broken_link)
 print("correct_link",correct_link)
 
-
-
 # for i in element:
 # r=requests.head(i.get_attribute("href"))
 # if r.status_code !=200
