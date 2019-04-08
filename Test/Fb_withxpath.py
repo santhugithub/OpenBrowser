@@ -1,7 +1,15 @@
 from selenium import webdriver
 import time
 
-driver=webdriver.Chrome()
+#-----------------------setting for security testing------------
+PROXY = "localhost:1231" #IP:PORT or HOST:PORT
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--proxy-server=%s' % PROXY)
+
+driver=webdriver.Chrome(options=chrome_options)
+#-----------------------complete of security testing------------
+
+#driver=webdriver.Chrome()
 driver.get("https://www.facebook.com/")
 driver.implicitly_wait(30)
 driver.find_element_by_xpath("//*[@class='inputtext']").send_keys("santhu.ns.in@gmal.com")
